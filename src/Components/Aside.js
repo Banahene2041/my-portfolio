@@ -9,7 +9,7 @@ import { useGlobalContext } from '../context';
 function Aside() {
   const {darkMode,openClipboard,gmail} = useGlobalContext()
   return (
-    <aside className='aside'>
+    <aside className={`${darkMode?"aside-active":"aside"}`}>
       <div className="img-container">
         <img src={image} alt="" />
       </div>
