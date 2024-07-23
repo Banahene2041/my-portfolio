@@ -28,6 +28,7 @@
 .light-mode{
     background: var(--bodyColor);
     color: var(--darkMode);
+
     h1,
     h2,
     h3,
@@ -38,14 +39,13 @@
         color: var(--darkMode);
     }
     div{
-        background: var(#fff) !important;
-        -webkit-background: var(#fff) !important;
+        background: var(#fff);
     }
     aside{
-        background: #fff !important;
-        -webkit-background: #fff !important;
+        background: #fff;
     }
 }
+
 .dark-mode{
     background: var(--darkMode);
     color: #fff;
@@ -61,58 +61,12 @@
         }
     
         div {
-            background: var(--background) !important;
-            -webkit-background: var(--background) !important;
+            background: var(--background);
         }
         aside{
-            background: var(--background) !important;
-            -webkit-background: var(--background) !important;
+            background: red;
+            border: 2px solid green;
         }
-}
-
-@media (max-width:600px) {
-    .light-mode{
-    background: var(--bodyColor);
-    color: var(--darkMode);
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p{
-        color: var(--darkMode);
-    }
-    div{
-        background: var(#fff) !important;
-        -webkit-background: var(#fff) !important;
-    }
-    aside{
-        background: #fff !important;
-        -webkit-background: #fff !important;
-    }
-}
-.dark-mode{
-    background: var(--darkMode);
-    color: #fff;
-    h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p {
-            color: var(#fff);
-        }
-        div {
-            background: var(--background) !important;
-            -webkit-background: var(--background) !important;
-        }
-        aside{
-            background: var(--background) !important;
-            -webkit-background: var(--background) !important;
-        }
-}
 }
 
 header{
