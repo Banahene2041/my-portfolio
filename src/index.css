@@ -26,7 +26,7 @@
 }
 
 .light-mode{
-    background: var(--bodyColor);
+    background: #fff;
     color: var(--darkMode);
 
     h1,
@@ -42,12 +42,13 @@
         background: var(#fff);
     }
     aside{
-        background: #fff;
+        background: #fff !important;
+        -webkit-background: #fff !important;
     }
 }
 
 .dark-mode{
-    background: var(--darkMode);
+    background: var(--background);
     color: #fff;
 
     h1,
@@ -64,9 +65,24 @@
             background: var(--background);
         }
         aside{
-            background: red;
-            border: 2px solid green;
+            background: var(--background) !important;
+            -webkit-background: var(--background) !important;
         }
+}
+
+@media (max-width:600px) {
+    .light-mode{
+        aside{
+        background: #fff !important;
+        -webkit-background: #fff !important;
+    }  
+    }
+    .dark-active{
+        aside{
+            background: var(--background) !important;
+            -webkit-background: var(--background) !important;
+        }   
+    }
 }
 
 header{
@@ -398,7 +414,7 @@ ul .link span {
 }
 
 .expert-section{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     color: black;
 }
 
